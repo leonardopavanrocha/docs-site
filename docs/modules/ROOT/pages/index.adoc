@@ -1,0 +1,6 @@
+= Sample page title
+
+[plantuml]
+----
+include::partial$sample-c4.puml[]
+----

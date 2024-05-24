@@ -1,0 +1,4 @@
+name: module-1
+title: Module 1
+nav:
+  - modules/ROOT/nav.adoc

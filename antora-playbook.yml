@@ -1,0 +1,12 @@
+site:
+  title: Antora Docs
+  start_page: module-1:ROOT:index.adoc
+source:
+  url: .
+  branches: HEAD
+  start_path: module-1
+  start_page: ROOT:
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
