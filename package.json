@@ -1,9 +1,10 @@
 {
-  "scripts":{
+  "scripts": {
     "start": "npx antora antora-playbook.yml"
   },
   "devDependencies": {
     "@antora/cli": "3.1.7",
-    "@antora/site-generator": "3.1.7"
+    "@antora/site-generator": "3.1.7",
+    "asciidoctor-kroki": "^0.18.1"
   }
 }

@@ -1,11 +1,24 @@
 site:
   title: Antora Docs
   start_page: module-1:ROOT:index.adoc
-source:
-  url: .
-  branches: HEAD
-  start_path: module-1
-  start_page: ROOT:
+content:
+  sources:
+    - url: .
+      start_path: docs
+      # To be changed to empty list for first release
+      branch: HEAD
+      version:
+        '(*)': $1
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    # Twipe's kroki server
+    kroki-server-url: 'http://kroki.k3s.twipemobile'
+    # svg rendering of C4 diagrams not optimal
+    kroki-default-format: 'png'
+    # create diagrams at build time`
+    kroki-fetch-diagram: true
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
